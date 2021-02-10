@@ -3,65 +3,97 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     background-color: #add8e6;
     font-family: 'Ranchers', cursive;
+    overflow: hidden;
 }
 
 
+/* header styling */
 h1{
-    background-color: green;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     font-size: 50px;
 }
 
+
+/* main box dimensions */
 main{
-    background-color: red;
     width: 900px;
     height: 600px;
     margin: auto;
 }
 
+/* row position */
 .row{
     text-align: center;
-    background-color: royalblue;
 }
 
-.card{
-    background-image: url("../img/pattern.png");
-    background-position: center;
-    background-size: contain;
+
+/* card styling commons */
+.card, .card-always-visible{
     overflow: hidden;
     margin: 7px;
     height: 170px;
     width: 15%;
-    border: 2px solid black;
+    padding:15px;
+    border: 1px solid rgb(65, 65, 65);
     display: inline-block;
     border-radius: 12px;
+    cursor: pointer;
+}
+.card{
+    background-image: url("../img/pattern.png");
+    background-position: center;
+    background-size: contain;
 }
 
-.hidden-img, h3{
+
+/* styling di immagine e testo SEMPRE visibili */
+.card-always-visible{
+    background-color: white;
+}
+.card-always-visible .not-hidden-img{
+    padding: 5px;
+    height: 80%;
+}
+.not-hidden-text{
+    color: tomato;
+}
+
+
+/* Hover to change text color on always shown card */
+.not-hidden-text:hover{
+    color: mediumvioletred;
+}
+
+
+/* styling di immagine e testo NASCOSTI */
+.hidden-img, .hidden-text{
     padding: 5px;
     height: 80%;
     display: none;
 }
-
+.hidden-text{
+    color: mediumvioletred;
+}
 .card:hover{
     background-color: white;
     background-image: none;
 }
-
-.card:hover .hidden-img, .card:hover h3{
+.card:hover .hidden-img, .card:hover .hidden-text{
     display: inline-block;
 }
 
 
-
-
 /* FOOTER */
+footer{
+   padding-top: 30px;
+}
 h4{
     text-align: center;
-    margin: 5px;
+    margin: 15px;
 }
+
+/* VALIDATED */
