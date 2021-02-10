@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #add8e6;
+    font-family: 'Ranchers', cursive;
+}
+
+
+h1{
+    background-color: green;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+}
+
+main{
+    background-color: red;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+}
+
+.row{
+    text-align: center;
+    background-color: royalblue;
+}
+
+.card{
+    background-image: url("../img/pattern.png");
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    margin: 7px;
+    height: 170px;
+    width: 15%;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+.hidden-img, h3{
+    padding: 5px;
+    height: 80%;
+    display: none;
+}
+
+.card:hover{
+    background-color: white;
+    background-image: none;
+}
+
+.card:hover .hidden-img, .card:hover h3{
+    display: inline-block;
+}
+
+
+
+
+/* FOOTER */
+h4{
+    text-align: center;
+    margin: 5px;
+}
