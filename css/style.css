@@ -35,9 +35,9 @@ main{
 .card, .card-always-visible{
     overflow: hidden;
     margin: 7px;
-    height: 170px;
-    width: 15%;
-    padding:15px;
+    height: 190px;
+    width: 17%;
+    padding:10px;
     border: 1px solid rgb(65, 65, 65);
     display: inline-block;
     border-radius: 12px;
@@ -55,7 +55,6 @@ main{
     background-color: white;
 }
 .card-always-visible .not-hidden-img{
-    padding: 5px;
     height: 80%;
 }
 .not-hidden-text{
@@ -64,14 +63,13 @@ main{
 
 
 /* Hover to change text color on always shown card */
-.not-hidden-text:hover{
+.card-always-visible:hover .not-hidden-text{
     color: mediumvioletred;
 }
 
 
 /* styling di immagine e testo NASCOSTI */
 .hidden-img, .hidden-text{
-    padding: 5px;
     height: 80%;
     display: none;
 }
